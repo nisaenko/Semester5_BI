@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MiniProjectDM_ISP", "MiniProjectDM_ISP\MiniProjectDM_ISP.dtproj", "{A66F1D15-9911-4F8C-992E-BE9E35CF71A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66F1D15-9911-4F8C-992E-BE9E35CF71A5}.Development|Default.ActiveCfg = Development
+		{A66F1D15-9911-4F8C-992E-BE9E35CF71A5}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

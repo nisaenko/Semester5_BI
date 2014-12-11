@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/5/2014 3:55:54 AM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="USER-PC"
+  DTS:CreatorName="User-PC\User"
+  DTS:DTSID="{E418A07A-1FA9-4B69-A229-599659F8389A}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5058.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Date"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{B37200A1-B209-46A5-A969-B698A3CE6176}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Populate Date"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E5B52323-53A5-41AF-961E-139E321D00BB}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populate Date"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Populate Date\Flat File Source"
+              componentClassID="{D23FD76B-F51D-420F-BBCB-19CBF6AC1AB4}"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Populate Date\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="{00D5ED27-EECD-49AB-BD96-C7BCD13FE250}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Flat File Connection Manager 1]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMLOG_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMLOG_ID]"
+                      length="500"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMLOG_ID]"
+                      name="COMLOG_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[REGISTRANT_NUM_DECLARANT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REGISTRANT_NUM_DECLARANT]"
+                      length="500"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[REGISTRANT_NUM_DECLARANT]"
+                      name="REGISTRANT_NUM_DECLARANT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_LAST_NM_DCLRNT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RGSTRNT_LAST_NM_DCLRNT]"
+                      length="500"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_LAST_NM_DCLRNT]"
+                      name="RGSTRNT_LAST_NM_DCLRNT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]"
+                      length="500"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]"
+                      name="RGSTRNT_1ST_NM_PRENOM_DCLRNT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMM_DATE]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMM_DATE]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMM_DATE]"
+                      name="COMM_DATE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[SUBMISSION_DATE_SOUMISSION]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SUBMISSION_DATE_SOUMISSION]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[SUBMISSION_DATE_SOUMISSION]"
+                      name="SUBMISSION_DATE_SOUMISSION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[POSTED_DATE_PUBLICATION]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSTED_DATE_PUBLICATION]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[POSTED_DATE_PUBLICATION]"
+                      name="POSTED_DATE_PUBLICATION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMLOG_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="COMLOG_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLIENT_NUM]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="CLIENT_NUM" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REGISTRANT_NUM_DECLARANT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="REGISTRANT_NUM_DECLARANT" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RGSTRNT_LAST_NM_DCLRNT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="RGSTRNT_LAST_NM_DCLRNT" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="RGSTRNT_1ST_NM_PRENOM_DCLRNT" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMM_DATE]"
+                      dataType="date"
+                      name="COMM_DATE" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REG_TYPE_ENR]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="REG_TYPE_ENR" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SUBMISSION_DATE_SOUMISSION]"
+                      dataType="date"
+                      name="SUBMISSION_DATE_SOUMISSION" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSTED_DATE_PUBLICATION]"
+                      dataType="date"
+                      name="POSTED_DATE_PUBLICATION" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PREV_COMLOG_ID_PRECEDNT]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="PREV_COMLOG_ID_PRECEDNT" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Cost_Imaginary_Column]"
+                      dataType="i8"
+                      name="Cost_Imaginary_Column" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Populate Date\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Populate Date\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{2CE39623-DC3A-49BF-86C0-0410B266ECD9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.MiniProjectDM]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMLOG_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="COMLOG_ID"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[D_ID]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMLOG_ID]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REGISTRANT_NUM_DECLARANT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="REGISTRANT_NUM_DECLARANT"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_Num]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[REGISTRANT_NUM_DECLARANT]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RGSTRNT_LAST_NM_DCLRNT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="RGSTRNT_LAST_NM_DCLRNT"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_LN]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_LAST_NM_DCLRNT]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="RGSTRNT_1ST_NM_PRENOM_DCLRNT"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_FN]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[RGSTRNT_1ST_NM_PRENOM_DCLRNT]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMM_DATE]"
+                      cachedDataType="date"
+                      cachedName="COMM_DATE"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Date]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[COMM_DATE]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SUBMISSION_DATE_SOUMISSION]"
+                      cachedDataType="date"
+                      cachedName="SUBMISSION_DATE_SOUMISSION"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cer_Date]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[SUBMISSION_DATE_SOUMISSION]" />
+                    <inputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSTED_DATE_PUBLICATION]"
+                      cachedDataType="date"
+                      cachedName="POSTED_DATE_PUBLICATION"
+                      externalMetadataColumnId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[P_Date]"
+                      lineageId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output].Columns[POSTED_DATE_PUBLICATION]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[D_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="D_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_Num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_Num" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_LN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_LN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[R_FN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_FN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[C_Date]"
+                      dataType="dbTimeStamp"
+                      name="C_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cer_Date]"
+                      dataType="dbTimeStamp"
+                      name="Cer_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[P_Date]"
+                      dataType="dbTimeStamp"
+                      name="P_Date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Populate Date\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Populate Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Populate Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Populate Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Populate Date.Paths[Flat File Source Output]"
+              endId="Package\Populate Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Populate Date\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Populate Dim_Date"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{7E2A901C-38C6-4552-9220-96A42F525062}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populate Dim_Date"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Populate Dim_Date\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Dim_Date]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Populate Dim_Date\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{2CE39623-DC3A-49BF-86C0-0410B266ECD9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.MiniProjectDM]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[D_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="D_ID"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_ID]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[D_ID]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[R_Num]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="R_Num"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_Num]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_Num]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[R_LN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="R_LN"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_LN]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_LN]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[R_FN]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="500"
+                      cachedName="R_FN"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_FN]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_FN]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[C_Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="C_Date"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Comm_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[C_Date]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Cer_Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Cer_Date"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cert_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cer_Date]" />
+                    <inputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[P_Date]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="P_Date"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Post_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[P_Date]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="Date_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_Num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="Reg_Num" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_LN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="Reg_LN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Reg_FN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="Reg_FN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Comm_Date]"
+                      dataType="dbTimeStamp"
+                      name="Comm_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cert_Date]"
+                      dataType="dbTimeStamp"
+                      name="Cert_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Post_Date]"
+                      dataType="dbTimeStamp"
+                      name="Post_Date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Populate Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Populate Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Populate Dim_Date\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Populate Dim_Date\OLE DB Source"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select distinct * from Date;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Populate Dim_Date\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{2CE39623-DC3A-49BF-86C0-0410B266ECD9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.MiniProjectDM]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[D_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[D_ID]"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[D_ID]"
+                      name="D_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_Num]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_Num]"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_Num]"
+                      name="R_Num"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_LN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_LN]"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_LN]"
+                      name="R_LN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_FN]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_FN]"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[R_FN]"
+                      name="R_FN"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[C_Date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[C_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[C_Date]"
+                      name="C_Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cer_Date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cer_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[Cer_Date]"
+                      name="Cer_Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[P_Date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[P_Date]"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].Columns[P_Date]"
+                      name="P_Date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[D_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="D_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_Num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_Num" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_LN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_LN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[R_FN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="R_FN" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[C_Date]"
+                      dataType="dbTimeStamp"
+                      name="C_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Cer_Date]"
+                      dataType="dbTimeStamp"
+                      name="Cer_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[P_Date]"
+                      dataType="dbTimeStamp"
+                      name="P_Date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[D_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[D_ID]"
+                      name="D_ID" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_Num]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_Num]"
+                      name="R_Num" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_LN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_LN]"
+                      name="R_LN" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_FN]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[R_FN]"
+                      name="R_FN" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[C_Date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[C_Date]"
+                      name="C_Date" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cer_Date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Cer_Date]"
+                      name="Cer_Date" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[P_Date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[P_Date]"
+                      name="P_Date" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Populate Dim_Date.Paths[OLE DB Source Output]"
+              endId="Package\Populate Dim_Date\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Populate Dim_Date\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4DBB1556-3C14-43CC-8F31-89BCF9A279E7}"
+      DTS:From="Package\Populate Date"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Populate Dim_Date" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Populate Date"
+          TopLeft="282,90" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Populate Dim_Date"
+          TopLeft="331,307" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="355.5,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.5,175"
+              Start="0,0"
+              End="61.5,167.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,83.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,83.5"
+                    Point2="0,87.5"
+                    Point3="4,87.5" />
+                  <mssgle:LineSegment
+                    End="57.5,87.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.5,87.5"
+                    Point2="61.5,87.5"
+                    Point3="61.5,91.5" />
+                  <mssgle:LineSegment
+                    End="61.5,167.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Populate Date">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Populate Date\Flat File Source"
+          TopLeft="402,111" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Populate Date\OLE DB Destination"
+          TopLeft="423,330" />
+        <EdgeLayout
+          Id="Package\Populate Date.Paths[Flat File Source Output]"
+          TopLeft="478.5,153">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="31,177"
+              Start="0,0"
+              End="31,169.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,84.5"
+                    Point2="0,88.5"
+                    Point3="4,88.5" />
+                  <mssgle:LineSegment
+                    End="27,88.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27,88.5"
+                    Point2="31,88.5"
+                    Point3="31,92.5" />
+                  <mssgle:LineSegment
+                    End="31,169.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Populate Dim_Date">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Populate Dim_Date\OLE DB Source"
+          TopLeft="431,163" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Populate Dim_Date\OLE DB Destination"
+          TopLeft="524,331" />
+        <EdgeLayout
+          Id="Package\Populate Dim_Date.Paths[OLE DB Source Output]"
+          TopLeft="507,205">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.5,126"
+              Start="0,0"
+              End="103.5,118.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59"
+                    Point2="0,63"
+                    Point3="4,63" />
+                  <mssgle:LineSegment
+                    End="99.5,63" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99.5,63"
+                    Point2="103.5,63"
+                    Point3="103.5,67" />
+                  <mssgle:LineSegment
+                    End="103.5,118.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Date\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Dim_Date\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Populate Dim_Date\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

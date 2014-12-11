@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MiniProjectDM_MP", "MiniProjectDM_MP\MiniProjectDM_MP.dwproj", "{C375E1A7-6230-446B-B6C2-9D99F43E8C31}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C375E1A7-6230-446B-B6C2-9D99F43E8C31}.Development|Default.ActiveCfg = Development
+		{C375E1A7-6230-446B-B6C2-9D99F43E8C31}.Development|Default.Build.0 = Development
+		{C375E1A7-6230-446B-B6C2-9D99F43E8C31}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

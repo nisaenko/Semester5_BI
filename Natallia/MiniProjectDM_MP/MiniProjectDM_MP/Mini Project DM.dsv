@@ -1,0 +1,309 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b5db8d29-11fb-4390-bf15-bbc50d98f40c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Mini Project DM</ID>
+  <Name>Mini Project DM</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Mini Project DM</DataSourceID>
+  <Schema>
+    <xs:schema id="Mini_x0020_Project_x0020_DM" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Mini_x0020_Project_x0020_DM" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="2f1f3094-3bf5-4071-8f70-000e85d140c4">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_Client" msprop:design-time-name="b45e9601-5528-4652-9d40-c4a602752935" msprop:DbTableName="Dim_Client" msprop:FriendlyName="Dim_Client" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Client_Num" msprop:design-time-name="0a14714b-f178-4cb0-8d96-1ecd244abedf" msprop:DbColumnName="Client_Num" msprop:FriendlyName="Client_Num">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="EN_Client" msprop:design-time-name="45cb4a6f-a0d4-454d-bd93-9f751ebc4359" msprop:DbColumnName="EN_Client" msprop:FriendlyName="EN_Client" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="FN_CLient" msprop:design-time-name="6c5d3edc-c70d-48ef-8cb9-2db9dbde6b7a" msprop:DbColumnName="FN_CLient" msprop:FriendlyName="FN_CLient" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:design-time-name="9641fcc9-995d-4502-8175-2578a157ccc4" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date_ID" msprop:design-time-name="d1d546f8-bb25-42a8-a381-5ce5eb78aa08" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Reg_Num" msprop:design-time-name="f171a851-6dc8-466b-9c5f-06cb42e768a0" msprop:DbColumnName="Reg_Num" msprop:FriendlyName="Reg_Num" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Reg_LN" msprop:design-time-name="7656f1d2-ba4b-410c-954b-f12b392dfa8e" msprop:DbColumnName="Reg_LN" msprop:FriendlyName="Reg_LN" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Reg_FN" msprop:design-time-name="dd94027e-8509-48d6-b729-0f9bf21d48ae" msprop:DbColumnName="Reg_FN" msprop:FriendlyName="Reg_FN" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Comm_Date" msprop:design-time-name="b2671c5f-2648-47c5-b240-45e16c2bd6cd" msprop:DbColumnName="Comm_Date" msprop:FriendlyName="Comm_Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Cert_Date" msprop:design-time-name="c3cb65b3-3f7b-4213-86d6-ab7d079a2beb" msprop:DbColumnName="Cert_Date" msprop:FriendlyName="Cert_Date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Post_Date" msprop:design-time-name="3cffdb02-7790-4500-842e-bd059f832199" msprop:DbColumnName="Post_Date" msprop:FriendlyName="Post_Date" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Institution" msprop:design-time-name="d447153c-de11-43bc-a42f-aea4ed6850c1" msprop:DbTableName="Dim_Institution" msprop:FriendlyName="Dim_Institution" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Institution_ID" msprop:design-time-name="b654e234-66ee-4d51-a15c-722e91c3c002" msprop:DbColumnName="Institution_ID" msprop:FriendlyName="Institution_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Institution" msprop:design-time-name="a676306b-ae59-4cb4-89f9-0d02be49feef" msprop:DbColumnName="Institution" msprop:FriendlyName="Institution" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Sender" msprop:design-time-name="190a40f2-371b-41aa-a2ef-cea2472823c0" msprop:DbTableName="Dim_Sender" msprop:FriendlyName="Dim_Sender" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Sender_ID" msprop:design-time-name="9748e2ac-d2a7-497c-a928-1c55d96f4665" msprop:DbColumnName="Sender_ID" msprop:FriendlyName="Sender_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sender_LN" msprop:design-time-name="ae96025d-f7a8-49ed-9f1e-ddab40590b64" msprop:DbColumnName="Sender_LN" msprop:FriendlyName="Sender_LN" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sender_FN" msprop:design-time-name="30a64730-f512-41ba-b744-05c0ef0d49ac" msprop:DbColumnName="Sender_FN" msprop:FriendlyName="Sender_FN" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sender_PosTit" msprop:design-time-name="4ef8329c-5f90-4e0e-92f7-c0822eecef6e" msprop:DbColumnName="Sender_PosTit" msprop:FriendlyName="Sender_PosTit" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sender_Branch" msprop:design-time-name="bf3abfd8-c53e-4e63-b642-e89e896e27bb" msprop:DbColumnName="Sender_Branch" msprop:FriendlyName="Sender_Branch" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Subject" msprop:design-time-name="62c6a4a0-022b-4da9-8c4b-e828f3f9d395" msprop:DbTableName="Dim_Subject" msprop:FriendlyName="Dim_Subject" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Subject_ID" msprop:design-time-name="d55d6d2a-02a9-426e-8ca4-96e7c471352e" msprop:DbColumnName="Subject_ID" msprop:FriendlyName="Subject_ID">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Subj_Comm" msprop:design-time-name="56fc0dad-bc69-4d93-bf28-4e8acab3e649" msprop:DbColumnName="Subj_Comm" msprop:FriendlyName="Subj_Comm" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Mini_Project_Fact" msprop:design-time-name="206c12b0-e501-4b37-a07b-f056372bc6a6" msprop:DbTableName="Mini_Project_Fact" msprop:FriendlyName="Mini_Project_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fact_ID" msprop:design-time-name="cd7615c2-9a9b-48e6-ad14-7d95b779053b" msprop:DbColumnName="Fact_ID" msprop:FriendlyName="Fact_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cost" msprop:design-time-name="f164ae73-2fe6-4be2-9748-4c160a5d9851" msprop:DbColumnName="Cost" msprop:FriendlyName="Cost" type="xs:int" minOccurs="0" />
+                  <xs:element name="Client_Num" msprop:design-time-name="e0751591-6ee3-4e85-b32f-c604977d784d" msprop:DbColumnName="Client_Num" msprop:FriendlyName="Client_Num" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Date_ID" msprop:design-time-name="2aa8b49d-766d-4ffc-8138-e000a3153fe5" msprop:DbColumnName="Date_ID" msprop:FriendlyName="Date_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Subject_ID" msprop:design-time-name="60b4deeb-cf9c-4eba-87aa-eb161b5d16ac" msprop:DbColumnName="Subject_ID" msprop:FriendlyName="Subject_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Institution_ID" msprop:design-time-name="5d16af35-9ec9-4a73-944d-c4c271885167" msprop:DbColumnName="Institution_ID" msprop:FriendlyName="Institution_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Sender_ID" msprop:design-time-name="a3b4a2ab-0931-4888-9a16-ade970150d40" msprop:DbColumnName="Sender_ID" msprop:FriendlyName="Sender_ID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="8efee94a-c509-426d-918c-80bd3d3d7bb7" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:design-time-name="a12a911c-cc9f-4547-b058-0caf3c2f479b" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:design-time-name="68eb9b06-ee0d-4641-af78-1aff8c160c6a" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="37f5896b-ebcf-42f0-b6d9-bcf35e2683e2" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
+                  <xs:element name="version" msprop:design-time-name="ee857058-df2a-4900-9939-3b767149bf35" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:design-time-name="b3c7dc99-ff98-45a1-98fd-b54669eccbe8" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Client" />
+          <xs:field xpath="Client_Num" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="Date_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Institution_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Institution" />
+          <xs:field xpath="Institution_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Sender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Sender" />
+          <xs:field xpath="Sender_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Subject_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Subject" />
+          <xs:field xpath="Subject_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:keyref name="FK_Mini_Project_Fact_Dim_Date" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Mini_Project_Fact" />
+          <xs:field xpath="Date_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Mini_Project_Fact_Dim_Subject" refer="dbo_Dim_Subject_Constraint1">
+          <xs:selector xpath=".//dbo_Mini_Project_Fact" />
+          <xs:field xpath="Subject_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Mini_Project_Fact_Dim_Institution" refer="dbo_Dim_Institution_Constraint1">
+          <xs:selector xpath=".//dbo_Mini_Project_Fact" />
+          <xs:field xpath="Institution_ID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Mini_Project_Fact_Dim_Client" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Mini_Project_Fact" />
+          <xs:field xpath="Client_Num" />
+        </xs:keyref>
+        <xs:keyref name="FK_Mini_Project_Fact_Dim_Sender" refer="dbo_Dim_Sender_Constraint1">
+          <xs:selector xpath=".//dbo_Mini_Project_Fact" />
+          <xs:field xpath="Sender_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Mini_x0020_Project_x0020_DM xmlns="" />
+  </Schema>
+</DataSourceView>
